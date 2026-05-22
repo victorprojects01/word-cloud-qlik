@@ -1,0 +1,7 @@
+{
+  "name": "Nuvem de Palavras",
+  "description": "Extensão de Nuvem de Palavras com filtro, tooltip, zoom e esquemas de cor",
+  "type": "visualization",
+  "version": "1.5.0",
+  "author": "Victor Ramos"
+}

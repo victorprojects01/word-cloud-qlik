@@ -1,0 +1,50 @@
+.word-cloud-root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.word-cloud-root svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: zoom-in;
+}
+
+.word-cloud-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #64748b;
+  text-align: center;
+}
+
+.word-cloud-word {
+  transition: opacity 0.15s ease, filter 0.15s ease;
+  user-select: none;
+}
+
+.word-cloud-word:hover {
+  opacity: 0.82;
+  filter: brightness(0.92);
+}
+
+.word-cloud-tooltip {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  background: rgba(15, 23, 42, 0.92);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.35;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.22);
+  white-space: nowrap;
+}
